@@ -1,8 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { FaHome, FaInstagram, FaLinkedin, FaGithub, FaBars, FaTimes } from "react-icons/fa";
 import styles from "../styles/Nav.module.css";
+
+// Add more dog images here when you have them
+const dogImages = [
+  "/images/drip dog.png",
+];
 
 const sections = [
   { id: "about", label: "About" },
@@ -13,6 +18,11 @@ const sections = [
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState("home");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [dogIndex, setDogIndex] = useState(0);
+
+  const nextDog = useCallback(() => {
+    setDogIndex((i) => (i + 1) % dogImages.length);
+  }, []);
 
   // track which section is visible
   useEffect(() => {
@@ -91,6 +101,16 @@ export default function Sidebar() {
           >
             Resume
           </a>
+        </div>
+
+        {/* dog image */}
+        <div className={styles.dogWrapper} onClick={nextDog}>
+          <img
+            src={dogImages[dogIndex]}
+            alt="drip dog"
+            className={styles.dogImage}
+          />
+          <span className={styles.dogCaption}>Click for doggo</span>
         </div>
 
         {/* social icons at bottom */}
