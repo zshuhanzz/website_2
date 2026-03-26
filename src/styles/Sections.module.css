@@ -314,17 +314,17 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-primary);
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  background: var(--card-bg);
+  border: 1px solid var(--sidebar-border);
   padding: 15px 40px;
   border-radius: 30px;
   text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 15px var(--glow);
+  transition: transform 0.15s;
+  box-shadow: 0 0 18px var(--glow);
 }
 
 .lifeButton:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 25px var(--glow);
+  transform: scale(1.07);
   color: var(--text-primary);
 }
 
