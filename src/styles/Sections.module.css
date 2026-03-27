@@ -79,7 +79,7 @@
 
 .aboutLabel {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--accent);
   margin-bottom: 15px;
@@ -97,8 +97,8 @@
 }
 
 .aboutImage {
-  width: 320px;
-  height: 380px;
+  width: 370px;
+  height: 440px;
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
