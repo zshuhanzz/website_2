@@ -7,7 +7,7 @@ export default function LifeButton() {
   return (
     <div className={styles.lifeButtonWrapper}>
       <Link href="/life" className={styles.lifeButton}>
-        Explore My Life ✦
+        Explore My Life
       </Link>
     </div>
   );

@@ -30,10 +30,11 @@ export default function AboutSection() {
         <Col md={5}>
           <div className={styles.aboutLabel}>About Me</div>
 
-          {/* TODO: Replace this placeholder with your actual photo */}
-          <div className={styles.aboutImagePlaceholder}>
-            <span>Photo</span>
-          </div>
+          <img
+            src="/images/websiteprofilepic.jpg"
+            alt="Shuhan Zhang"
+            className={styles.aboutImage}
+          />
         </Col>
       </Row>
     </Container>

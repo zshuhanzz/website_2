@@ -2,6 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { FaHome, FaInstagram, FaLinkedin, FaGithub, FaBars, FaTimes } from "react-icons/fa";
+
+const dogImages = [
+  "/images/drip dog.png",
+  // add more dog image paths here later
+];
 import styles from "../styles/Nav.module.css";
 
 const sections = [
@@ -13,6 +18,11 @@ const sections = [
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState("home");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [dogIndex, setDogIndex] = useState(0);
+
+  const cycleDog = () => {
+    setDogIndex((prev) => (prev + 1) % dogImages.length);
+  };
 
   // track which section is visible
   useEffect(() => {
@@ -91,6 +101,16 @@ export default function Sidebar() {
           >
             Resume
           </a>
+        </div>
+
+        {/* drip dog */}
+        <div className={styles.dogContainer} onClick={cycleDog}>
+          <img
+            src={dogImages[dogIndex]}
+            alt="drip dog"
+            className={styles.dogImage}
+          />
+          <p className={styles.dogCaption}>Click for doggo</p>
         </div>
 
         {/* social icons at bottom */}

@@ -35,7 +35,7 @@ export default function MainPage() {
       <Sidebar />
       <ThemeToggle />
 
-      <main style={{ marginLeft: "200px" }}>
+      <main style={{ marginLeft: "200px", background: "var(--bg-primary)" }}>
         <section id="home">
           <HomePage />
         </section>

@@ -67,6 +67,33 @@
   background: rgba(139, 92, 246, 0.08);
 }
 
+.dogContainer {
+  width: 100%;
+  padding: 0 20px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dogImage {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.dogContainer:hover .dogImage {
+  transform: scale(1.03);
+}
+
+.dogCaption {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
 .socials {
   display: flex;
   gap: 15px;
