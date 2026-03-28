@@ -7,10 +7,10 @@ import styles from "../styles/Sections.module.css";
 // TODO: Replace these with your actual projects
 const projects = [
   {
-    title: "Project One",
-    tech: "React | Node.js | MongoDB",
-    description: "Coming soon...",
-    link: "https://github.com",
+    title: "Tradealytics",
+    tech: "Python, C++, XGBoost, FastAPI, PostgreSQL, Next.js, Pybind, Pandas",
+    description: "Developed a full-stack trading analysis platform that identifies cognitive biases using ML (XGBoost), runs counterfactual simulations to evaluate decision impact, and visualizes long term performance trends",
+    link: "https://github.com/zshuhanzz/Tradealytics",
   },
   {
     title: "Project Two",
