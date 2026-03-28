@@ -26,10 +26,11 @@ const projects = [
     image: "/images/containervisual.png",
   },
   {
-    title: "Project Four",
-    tech: "TypeScript | Three.js | WebGL",
-    description: "Coming soon...",
-    link: "https://github.com",
+    title: "Game Modification Development for CS:GO",
+    tech: "C/C++, DirectX",
+    description: "Created a C++ game modification framework for CS:GO by combining DLL injection, reverse engineering with Ghidra, and a custom DirectX overlay for real-time data visualization",
+    link: "https://github.com/zshuhanzz?tab=repositories",
+    image: "/images/csgocheatvisual.png",
   },
 ];
 

@@ -191,31 +191,12 @@
   position: relative;
   border-radius: 12px;
   padding: 3px;
-  background: conic-gradient(
-    from var(--angle, 0deg),
-    var(--accent),
-    transparent 30%,
-    transparent 70%,
-    var(--accent)
-  );
-  animation: rotateGradient 4s linear infinite;
+  background: var(--sidebar-border);
   transition: transform 0.3s ease;
 }
 
 .projectCard:hover {
   transform: translateY(-5px);
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-@keyframes rotateGradient {
-  to {
-    --angle: 360deg;
-  }
 }
 
 .projectCardInner {
@@ -227,7 +208,7 @@
 
 .projectImage {
   width: 100%;
-  height: 180px;
+  height: 230px;
   background: var(--bg-secondary);
   display: flex;
   align-items: center;
